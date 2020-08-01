@@ -1,15 +1,11 @@
 import React from 'react';
+import TestBlock from './blocks/TestBlock';
 
-import '../styles/index.css';
-
-class App extends React.PureComponent {
-    render() {
-        return (
-            <div>
-                <h1>Hdde awd1dawd1fawddawd Wdorld!</h1>
-            </div>
-        );
-    }
-}
+const App = () : JSX.Element => (
+  <div className="app">
+    <h1>Hello. world!</h1>
+      <TestBlock/>
+  </div>
+);
 
 export default App;

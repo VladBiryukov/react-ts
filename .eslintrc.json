@@ -1,0 +1,9 @@
+{
+  "root": true,
+  "rules": {
+    "no-console": "error",
+    "indent": ["error", 2, {"SwitchCase": 1}],
+    "max-len": ["error", { "code": 120, "ignorePattern": "import \\{?\\s?.*\\s?\\}? from '.*';" }],
+    "no-restricted-imports": ["error", { "patterns": ["../../*"] }]  // restrict relative imports with from parent of parent
+  }
+}
